@@ -1,0 +1,18 @@
+- name: Cambiar ruta por defecto del cliente
+  template:
+    src: interface
+    dest: /etc/network/interfaces
+    owner: root
+    group: root
+    mode: 0644
+
+# - name: reinicio
+  # service:
+    # name: reinicio
+    # state: restarted
+  # become: yes
+
+- name: reiniciando maquina
+  ansible.builtin.reboot:
+    pre_reboot_delay: 5
+    post_reboot_delay: 15
