@@ -1,0 +1,21 @@
+- name: Instala los paquetes para DHCP
+  apt:
+    pkg:
+      - isc-dhcp-server
+      - iptables
+    
+- name: Copia la plantilla dhcpd.conf 
+  template:
+    src: dhcpd.conf
+    dest: /etc/dhcp/dhcpd.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Copia la plantilla isc-dhcp-server
+  template:
+    src: isc-dhcp-server
+    dest: /etc/default/isc-dhcp-server
+    owner: root
+    group: root
+    mode: 0644

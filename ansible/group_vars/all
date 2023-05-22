@@ -1,0 +1,14 @@
+
+bd_name: wordpress
+bd_user: bduser
+bd_pass: asdasd
+ipnrouter: 192.168.123.0
+iprouter: 192.168.123.130
+netmask: 255.255.255.0
+rango: 192.168.123.100 192.168.123.150
+tiempo_por_defecto: 700
+tiempomax: 3600
+dns_google: 8.8.8.8
+mac_servidorweb: 52:54:00:a1:de:40
+ip_servidorweb: 192.168.123.227
+muyaislada: enp7s0

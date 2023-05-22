@@ -1,0 +1,8 @@
+- name: Actualizacion
+  apt: update_cache=yes upgrade=yes
+
+- name: SSH
+  authorized_key:
+    user: usuario
+    state: present
+    key: "{{ lookup('file', '/home/nazare/.ssh/id_rsa.pub') }}"

@@ -1,0 +1,5 @@
+- name: Reboot
+  reboot:
+  become: yes
+  ignore_errors: yes
+  timeout: 7
