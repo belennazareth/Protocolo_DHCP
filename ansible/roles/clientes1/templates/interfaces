@@ -8,7 +8,7 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface
-allow-hotplug enp1s0
+auto enp1s0
 iface enp1s0 inet static
         address 192.168.132.103
         netmask 255.255.255.0
@@ -17,5 +17,5 @@ iface enp1s0 inet static
         gateway 192.168.132.1
 
 # Red Privada
-allow-hotplug {{interfaz_cliente}}
+auto {{interfaz_cliente}}
 iface {{interfaz_cliente}} inet dhcp
