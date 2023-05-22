@@ -13,12 +13,12 @@
   become: true
   roles:
     - web
-    - clientes
+    - clientes1
 
 - hosts: cliente
   become: true
   roles:
-    - clientes
+    - clientes2
 
 - hosts: all
   become: true

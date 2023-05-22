@@ -11,6 +11,8 @@
     owner: root
     group: root
     mode: 0644
+  notify:
+    - Reinicio servicio isc-dhcp-server
 
 - name: Copia la plantilla isc-dhcp-server
   template:
@@ -19,3 +21,5 @@
     owner: root
     group: root
     mode: 0644
+  notify:
+    - Reinicio servicio isc-dhcp-server

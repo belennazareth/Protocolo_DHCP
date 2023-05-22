@@ -1,0 +1,5 @@
+- name: Reinicio de red
+  service:
+    name: networking
+    state: restarted
+  ignore_errors: yes

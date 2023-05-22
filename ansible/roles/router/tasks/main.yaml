@@ -1,0 +1,13 @@
+- name: Bit de forward
+  sysctl:
+    name: net.ipv4.ip_forward
+    value: "1"
+    state: present
+    reload: yes
+  
+- name: Cambio de red de Router
+  template:
+    src: interfaces
+    dest: /etc/network/interfaces
+    mode: 0644
+  notify: Reinicio de red
