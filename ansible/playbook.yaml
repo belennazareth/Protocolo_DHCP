@@ -19,6 +19,11 @@
   become: true
   roles:
     - clientes2
+ 
+- hosts: clienteex
+  become: true
+  roles:
+    - clientes3
 
 - hosts: all
   become: true
